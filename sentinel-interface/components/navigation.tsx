@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react"
 import { Shield, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { Features } from "./features"
+import Link from "next/link"
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -26,29 +28,29 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center">
           <Shield className="h-8 w-8 text-green-500 mr-2" />
-          <span className="text-xl font-bold">Sentinel</span>
+          <span className="text-xl font-bold"><a href="/">Sentinel</a></span>
         </div>
 
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="text-green-400 hover:text-green-300 transition-colors">
+          <Link href='/features' className="text-green-400 hover:text-green-300 transition-colors">
             Features
-          </a>
-          <a href="#docs" className="text-green-400 hover:text-green-300 transition-colors">
+          </Link>
+          <Link href="/documentation" className="text-green-400 hover:text-green-300 transition-colors">
             Documentation
-          </a>
-          <a href="#about" className="text-green-400 hover:text-green-300 transition-colors">
+          </Link>
+          <Link href="/about" className="text-green-400 hover:text-green-300 transition-colors">
             About
-          </a>
-          <a href="#contact" className="text-green-400 hover:text-green-300 transition-colors">
+          </Link>
+          <Link href="/contact" className="text-green-400 hover:text-green-300 transition-colors">
             Contact
-          </a>
+          </Link>
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
-          <Button variant="outline" className="border-green-500 text-green-500 hover:bg-green-950">
-            Login
+          <Button onClick={() => { window.location.href="/components/login"}} variant="outline" className="border-green-500 text-green-500 hover:bg-green-950">
+            OC-ID Login
           </Button>
-          <Button className="bg-green-600 hover:bg-green-700 text-black">Get Started</Button>
+          <Button onClick={()=> {window.location.href="https://github.com/Aryanzutshi/Sentinel"}} className="bg-green-600 hover:bg-green-700 text-black">Github</Button>
         </div>
 
         <button className="md:hidden text-green-500" onClick={() => setMobileMenuOpen(true)}>
@@ -69,16 +71,16 @@ export function Navigation() {
         </div>
 
         <div className="flex flex-col items-center justify-center h-full space-y-8">
-          <a href="#features" className="text-green-400 text-2xl" onClick={() => setMobileMenuOpen(false)}>
+          <a href="/features" className="text-green-400 text-2xl" onClick={() => setMobileMenuOpen(false)}>
             Features
           </a>
-          <a href="#docs" className="text-green-400 text-2xl" onClick={() => setMobileMenuOpen(false)}>
+          <a href="/documentation" className="text-green-400 text-2xl" onClick={() => setMobileMenuOpen(false)}>
             Documentation
           </a>
-          <a href="#about" className="text-green-400 text-2xl" onClick={() => setMobileMenuOpen(false)}>
+          <a href="/about" className="text-green-400 text-2xl" onClick={() => setMobileMenuOpen(false)}>
             About
           </a>
-          <a href="#contact" className="text-green-400 text-2xl" onClick={() => setMobileMenuOpen(false)}>
+          <a href="/contact" className="text-green-400 text-2xl" onClick={() => setMobileMenuOpen(false)}>
             Contact
           </a>
 
@@ -86,7 +88,7 @@ export function Navigation() {
             <Button variant="outline" className="border-green-500 text-green-500 hover:bg-green-950">
               Login
             </Button>
-            <Button className="bg-green-600 hover:bg-green-700 text-black">Get Started</Button>
+            <Button onClick={()=> {window.location.href="https://github.com/Aryanzutshi/Sentinel"}} className="bg-green-600 hover:bg-green-700 text-black">Github</Button>
           </div>
         </div>
       </div>

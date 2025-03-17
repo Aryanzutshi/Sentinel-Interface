@@ -58,10 +58,10 @@ export function Hero() {
         <div
           className={`flex flex-wrap justify-center gap-4 transition-opacity duration-1000 ${buttonsVisible ? "opacity-100" : "opacity-0"}`}
         >
-          <Button className="bg-green-600 hover:bg-green-700 text-black font-bold px-6 py-3 rounded-md">
+          <Button onClick={()=>window.location.href="/get-started"} className="bg-green-600 hover:bg-green-700 text-black font-bold px-6 py-3 rounded-md">
             Get Started
           </Button>
-          <Button variant="outline" className="border-green-500 text-green-500 hover:bg-green-950 px-6 py-3 rounded-md">
+          <Button onClick={()=> window.location.href="https://app.gitbook.com/o/UO3hYGggJBMeQGIczTah/s/pDNUEw0AjuWkqfI1z0U9/"} variant="outline" className="border-green-500 text-green-500 hover:bg-green-950 px-6 py-3 rounded-md">
             View Documentation
           </Button>
         </div>
