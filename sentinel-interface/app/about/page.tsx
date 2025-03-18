@@ -16,61 +16,61 @@ export default function AboutPage() {
 
   const teamMembers = [
     {
-      name: "Alex Chen",
+      name: "Aryan Zutshi",
       role: "Founder & CEO",
-      bio: "Former security researcher at Ethereum Foundation with 10+ years in blockchain security.",
-      image: "/placeholder.svg?height=200&width=200",
+      bio: "Founder of EduXX.",
+      image: "/home/accidentalgenius/DEV/Hackathon Work/Sentinel-Interface/sentinel-interface/public/ProfilePic.jpeg",
     },
-    {
-      name: "Sophia Rodriguez",
-      role: "CTO",
-      bio: "Smart contract auditor and core developer with contributions to major DeFi protocols.",
-      image: "/placeholder.svg?height=200&width=200",
-    },
-    {
-      name: "Marcus Johnson",
-      role: "Head of Research",
-      bio: "PhD in Cryptography with expertise in zero-knowledge proofs and MEV protection.",
-      image: "/placeholder.svg?height=200&width=200",
-    },
-    {
-      name: "Aisha Patel",
-      role: "Lead Security Engineer",
-      bio: "Discovered critical vulnerabilities in top DeFi protocols, saved over $300M in funds.",
-      image: "/placeholder.svg?height=200&width=200",
-    },
+    // {
+    //   name: "Sophia Rodriguez",
+    //   role: "CTO",
+    //   bio: "Smart contract auditor and core developer with contributions to major DeFi protocols.",
+    //   image: "/placeholder.svg?height=200&width=200",
+    // },
+    // {
+    //   name: "Marcus Johnson",
+    //   role: "Head of Research",
+    //   bio: "PhD in Cryptography with expertise in zero-knowledge proofs and MEV protection.",
+    //   image: "/placeholder.svg?height=200&width=200",
+    // },
+    // {
+    //   name: "Aisha Patel",
+    //   role: "Lead Security Engineer",
+    //   bio: "Discovered critical vulnerabilities in top DeFi protocols, saved over $300M in funds.",
+    //   image: "/placeholder.svg?height=200&width=200",
+    // },
   ]
 
   const timeline = [
     {
-      year: "2021",
+      year: "2025",
       title: "Inception",
       description: "Sentinel was founded with a mission to make Web3 safer for everyone.",
     },
     {
-      year: "2022",
+      year: "2026",
       title: "First Product Launch",
-      description: "Released our Smart Contract Firewall, protecting over $100M in TVL within first month.",
+      description: "Releasing our Smart Contract Firewall, goal to getting a user onboarding of 10000+ in the first 4 months",
     },
     {
-      year: "2022",
+      year: "2026",
       title: "Seed Funding",
-      description: "Raised $5M from leading crypto VCs to accelerate development and growth.",
+      description: "Raising over $5M from leading crypto VCs to accelerate development and growth.",
     },
     {
-      year: "2023",
+      year: "2026",
       title: "MEV Protection Launch",
-      description: "Introduced our revolutionary MEV protection layer, preventing millions in front-running losses.",
+      description: "Introducing our revolutionary MEV protection layer, aiming to preventing millions in front-running losses.",
     },
     {
-      year: "2023",
+      year: "2027",
       title: "Series A",
-      description: "Secured $20M in Series A funding to expand our security offerings.",
+      description: "Securing $20M in Series A funding to expand our security offerings.",
     },
     {
-      year: "2024",
+      year: "2027",
       title: "Self-Healing Contracts",
-      description: "Launched groundbreaking self-healing technology for smart contracts.",
+      description: "Launching groundbreaking self-healing technology for smart contracts.",
     },
   ]
 
@@ -104,11 +104,11 @@ export default function AboutPage() {
                   security solutions that are easy to implement and effective against evolving threats.
                 </p>
                 <p className="mb-6 text-green-400">
-                  Founded by a team of security researchers and blockchain developers, Sentinel was born out of the need
+                  Founded by a team of blockchain developer, Sentinel was born out of the need
                   for better security tools in the rapidly evolving blockchain landscape. We've seen firsthand the
                   devastating impact of smart contract exploits and are committed to preventing them.
                 </p>
-                <div className="grid grid-cols-2 gap-4 mt-8">
+                {/* <div className="grid grid-cols-2 gap-4 mt-8">
                   <div className="bg-green-950/20 border border-green-900 rounded-lg p-4 text-center">
                     <div className="text-3xl font-bold mb-2">$10B+</div>
                     <div className="text-sm text-green-400">Value Protected</div>
@@ -125,7 +125,7 @@ export default function AboutPage() {
                     <div className="text-3xl font-bold mb-2">15+</div>
                     <div className="text-sm text-green-400">Blockchains Supported</div>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="relative">
                 <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>

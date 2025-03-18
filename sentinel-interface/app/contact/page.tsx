@@ -58,7 +58,7 @@ export default function ContactPage() {
                       <Mail className="h-6 w-6 mr-4 mt-1" />
                       <div>
                         <h3 className="font-bold mb-1">Email</h3>
-                        <p className="text-green-400">contact@sentinel.security</p>
+                        <p className="text-green-400">zutshiaryan5@gmail.com</p>
                       </div>
                     </div>
 
@@ -66,7 +66,7 @@ export default function ContactPage() {
                       <Phone className="h-6 w-6 mr-4 mt-1" />
                       <div>
                         <h3 className="font-bold mb-1">Phone</h3>
-                        <p className="text-green-400">+1 (888) 123-4567</p>
+                        <p className="text-green-400">+91 896 855 6472</p>
                       </div>
                     </div>
 
@@ -75,11 +75,11 @@ export default function ContactPage() {
                       <div>
                         <h3 className="font-bold mb-1">Office</h3>
                         <p className="text-green-400">
-                          123 Blockchain Avenue
+                          Chandigarh University
                           <br />
-                          San Francisco, CA 94103
+                          Mohali, Punjab
                           <br />
-                          United States
+                          India
                         </p>
                       </div>
                     </div>
@@ -87,18 +87,18 @@ export default function ContactPage() {
 
                   <h3 className="font-bold mb-4">Connect With Us</h3>
                   <div className="flex space-x-4">
-                    <a href="#" className="bg-green-950/30 hover:bg-green-950/50 transition-colors p-3 rounded-full">
+                    <a href="https://github.com/aryanzutshi" className="bg-green-950/30 hover:bg-green-950/50 transition-colors p-3 rounded-full">
                       <Github className="h-6 w-6" />
                     </a>
-                    <a href="#" className="bg-green-950/30 hover:bg-green-950/50 transition-colors p-3 rounded-full">
+                    <a href="https://X.com/aryanzutshi12" className="bg-green-950/30 hover:bg-green-950/50 transition-colors p-3 rounded-full">
                       <Twitter className="h-6 w-6" />
                     </a>
-                    <a href="#" className="bg-green-950/30 hover:bg-green-950/50 transition-colors p-3 rounded-full">
+                    <a href="https://linkedin.com/in/aryanzutshi" className="bg-green-950/30 hover:bg-green-950/50 transition-colors p-3 rounded-full">
                       <Linkedin className="h-6 w-6" />
                     </a>
                   </div>
 
-                  <div className="mt-12">
+                  {/* <div className="mt-12">
                     <h3 className="font-bold mb-4">Office Hours</h3>
                     <div className="grid grid-cols-2 gap-2 text-sm">
                       <div>Monday - Friday:</div>
@@ -108,7 +108,7 @@ export default function ContactPage() {
                       <div>Sunday:</div>
                       <div>Closed</div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
@@ -229,17 +229,15 @@ export default function ContactPage() {
                 <div className="bg-green-950/10 border border-green-900 rounded-lg p-6">
                   <h3 className="font-bold mb-2">How much does Sentinel cost?</h3>
                   <p className="text-green-400 text-sm">
-                    Pricing depends on the protection level and TVL of your contracts. We offer flexible plans starting
-                    from $500/month. Contact our sales team for a custom quote.
+                    Sentinel is currently free to use as we are in the beta phase.
                   </p>
                 </div>
 
                 <div className="bg-green-950/10 border border-green-900 rounded-lg p-6">
                   <h3 className="font-bold mb-2">Do you offer emergency response services?</h3>
-                  <p className="text-green-400 text-sm">
-                    Yes, our premium plans include 24/7 emergency response from our security team to help mitigate
-                    active exploits and vulnerabilities.
-                  </p>
+                    <p className="text-green-400 text-sm">
+                      No, Sentinel does not offer emergency response services at this time.
+                    </p>
                 </div>
               </div>
             </div>

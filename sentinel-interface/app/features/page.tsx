@@ -131,7 +131,7 @@ export default function FeaturesPage() {
             </div>
 
             <div className="mt-16 text-center">
-              <Button className="bg-green-600 hover:bg-green-700 text-black font-bold px-8 py-3 rounded-md text-lg">
+              <Button onClick={()=> {window.location.href="/get-started"}} className="bg-green-600 hover:bg-green-700 text-black font-bold px-8 py-3 rounded-md text-lg">
                 Get Started with Sentinel
               </Button>
             </div>

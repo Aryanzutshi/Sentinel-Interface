@@ -78,8 +78,8 @@ export default function DocumentationPage() {
                     <h3 className="text-xl font-bold mt-8 mb-4">Prerequisites</h3>
                     <ul className="list-disc pl-6 space-y-2 mb-6">
                       <li>Ethereum, Polygon, BSC, or other EVM-compatible blockchain</li>
-                      <li>Solidity smart contracts (version 0.7.0 or higher)</li>
-                      <li>Node.js (version 14 or higher) for local development</li>
+                      <li>Solidity smart contracts (version 0.8.0 or higher)</li>
+                      <li>Python (version 3.0 or higher) for local development</li>
                     </ul>
 
                     <h3 className="text-xl font-bold mt-8 mb-4">Quick Start</h3>
@@ -95,14 +95,16 @@ export default function DocumentationPage() {
                           {`# Install Sentinel CLI
 npm install -g @sentinel/cli
 
-# Initialize Sentinel in your project
-sentinel init
-
-# Configure your security settings
-sentinel configure
+# Check out Help
+sentinel -h or sentinel --help
 
 # Deploy protection to your contracts
-sentinel protect --contract 0x123...`}
+sentinel scan <path-to-the-contract>
+
+# Visualize your vulnerablities (coming Soon)
+sentinel visualize <choice>`
+}
+
                         </code>
                       </pre>
                     </div>
@@ -127,7 +129,7 @@ sentinel protect --contract 0x123...`}
 
                     <Tabs defaultValue="npm" className="mb-8">
                       <TabsList className="bg-green-950/30 border border-green-900">
-                        <TabsTrigger value="npm">NPM</TabsTrigger>
+                        <TabsTrigger value="npm">pip</TabsTrigger>
                         <TabsTrigger value="yarn">Yarn</TabsTrigger>
                         <TabsTrigger value="docker">Docker</TabsTrigger>
                       </TabsList>
@@ -141,10 +143,8 @@ sentinel protect --contract 0x123...`}
                         <pre className="text-green-500 overflow-x-auto">
                           <code>
                             {`# Install Sentinel CLI globally
-npm install -g @sentinel/cli
-
-# Install Sentinel in your project
-npm install --save @sentinel/core @sentinel/contracts`}
+pip install -g @sentinel/cli
+`}
                           </code>
                         </pre>
                       </TabsContent>
@@ -192,7 +192,7 @@ docker run -p 3000:3000 sentinel/security:latest`}
                           <li>• 2 CPU cores</li>
                           <li>• 4GB RAM</li>
                           <li>• 20GB storage</li>
-                          <li>• Node.js v14+</li>
+                          <li>• Python 3.0</li>
                         </ul>
                       </div>
                       <div className="bg-green-950/20 border border-green-900 rounded-md p-4">
@@ -201,7 +201,7 @@ docker run -p 3000:3000 sentinel/security:latest`}
                           <li>• 4+ CPU cores</li>
                           <li>• 8GB+ RAM</li>
                           <li>• 50GB+ SSD storage</li>
-                          <li>• Node.js v16+</li>
+                          <li>• Python 3.0+</li>
                         </ul>
                       </div>
                     </div>
@@ -229,7 +229,7 @@ docker run -p 3000:3000 sentinel/security:latest`}
                       </div>
                       <pre className="text-green-500 overflow-x-auto">
                         <code>
-                          {`module.exports = {
+                          {/* {`module.exports = {
   network: "ethereum",
   contracts: [
     {
@@ -246,7 +246,9 @@ docker run -p 3000:3000 sentinel/security:latest`}
     enabled: true,
     alertThreshold: "medium"
   }
-};`}
+};
+`} */}
+Coming Soon
                         </code>
                       </pre>
                     </div>
@@ -299,8 +301,8 @@ docker run -p 3000:3000 sentinel/security:latest`}
                     <p className="text-center mb-6 max-w-md">
                       We're currently building this section of our documentation. Check back soon for updates.
                     </p>
-                    <Button className="bg-green-600 hover:bg-green-700 text-black font-bold">
-                      Return to Getting Started
+                    <Button onClick={()=>{window.location.href="/documentation"}} className="bg-green-600 hover:bg-green-700 text-black font-bold">
+                      Return to Documentation
                     </Button>
                   </div>
                 )}

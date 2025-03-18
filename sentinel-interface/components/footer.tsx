@@ -8,17 +8,17 @@ export function Footer() {
           <div className="md:col-span-1">
             <div className="flex items-center mb-4">
               <Shield className="h-6 w-6 text-green-500 mr-2" />
-              <span className="text-xl font-bold">Sentinel</span>
+              <span className="text-xl font-bold"><a href="/">Sentinel</a></span>
             </div>
             <p className="text-green-400 mb-4">The ultimate firewall for smart contracts.</p>
             <div className="flex space-x-4">
-              <a href="#" className="text-green-500 hover:text-green-400">
+              <a href="https://github.com/aryanzutshi/Sentinel" className="text-green-500 hover:text-green-400">
                 <Github className="h-5 w-5" />
               </a>
-              <a href="#" className="text-green-500 hover:text-green-400">
+              <a href="https://x.com.aryanzutshi12" className="text-green-500 hover:text-green-400">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-green-500 hover:text-green-400">
+              <a href="https://linkedin.com/in/aryanzutshi" className="text-green-500 hover:text-green-400">
                 <Linkedin className="h-5 w-5" />
               </a>
             </div>
@@ -28,23 +28,23 @@ export function Footer() {
             <h3 className="text-lg font-bold mb-4">Product</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-green-400 hover:text-green-300">
+                <a href="/features" className="text-green-400 hover:text-green-300">
                   Features
                 </a>
               </li>
               <li>
-                <a href="#" className="text-green-400 hover:text-green-300">
+                <a href="/get-started" className="text-green-400 hover:text-green-300">
                   Pricing
                 </a>
               </li>
               <li>
-                <a href="#" className="text-green-400 hover:text-green-300">
+                <a href="https://app.gitbook.com/o/UO3hYGggJBMeQGIczTah/s/pDNUEw0AjuWkqfI1z0U9/" className="text-green-400 hover:text-green-300">
                   Documentation
                 </a>
               </li>
               <li>
                 <a href="#" className="text-green-400 hover:text-green-300">
-                  API
+                  API (Will update)
                 </a>
               </li>
             </ul>
@@ -54,22 +54,22 @@ export function Footer() {
             <h3 className="text-lg font-bold mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-green-400 hover:text-green-300">
+                <a href="/about" className="text-green-400 hover:text-green-300">
                   About
                 </a>
               </li>
               <li>
                 <a href="#" className="text-green-400 hover:text-green-300">
-                  Blog
+                  Blog (Coming Soon)
                 </a>
               </li>
               <li>
                 <a href="#" className="text-green-400 hover:text-green-300">
-                  Careers
+                  Careers (Coming Soon)
                 </a>
               </li>
               <li>
-                <a href="#" className="text-green-400 hover:text-green-300">
+                <a href="/contact" className="text-green-400 hover:text-green-300">
                   Contact
                 </a>
               </li>
