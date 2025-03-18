@@ -5,8 +5,11 @@ import { Shield, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Features } from "./features"
 import Link from "next/link"
+import { useOCAuth } from '@opencampus/ocid-connect-js';
+import LoginButton from "../components/LoginButton";
 
 export function Navigation() {
+  const { ocAuth } = useOCAuth();
   const [isScrolled, setIsScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -18,6 +21,15 @@ export function Navigation() {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+ 
+  const handleLogin = async () => {
+    try {
+      await ocAuth.signInWithRedirect({ state: 'opencampus' });
+    } catch (error) {
+      console.error('Login error:', error);
+    }
+  };
 
   return (
     <header
@@ -47,7 +59,7 @@ export function Navigation() {
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
-          <Button onClick={() => { window.location.href="/components/login"}} variant="outline" className="border-green-500 text-green-500 hover:bg-green-950">
+          <Button onClick={handleLogin}  variant="outline" className="border-green-500 text-green-500 hover:bg-green-950">
             OC-ID Login
           </Button>
           <Button onClick={()=> {window.location.href="https://github.com/Aryanzutshi/Sentinel"}} className="bg-green-600 hover:bg-green-700 text-black">Github</Button>
@@ -85,8 +97,8 @@ export function Navigation() {
           </a>
 
           <div className="pt-8 flex flex-col space-y-4">
-            <Button variant="outline" className="border-green-500 text-green-500 hover:bg-green-950">
-              Login
+            <Button onClick={handleLogin} variant="outline" className="border-green-500 text-green-500 hover:bg-green-950">
+              OC-ID Login
             </Button>
             <Button onClick={()=> {window.location.href="https://github.com/Aryanzutshi/Sentinel"}} className="bg-green-600 hover:bg-green-700 text-black">Github</Button>
           </div>

@@ -19,7 +19,7 @@ export default function AboutPage() {
       name: "Aryan Zutshi",
       role: "Founder & CEO",
       bio: "Founder of EduXX.",
-      image: "/home/accidentalgenius/DEV/Hackathon Work/Sentinel-Interface/sentinel-interface/public/ProfilePic.jpeg",
+      image: "/public/ProfilePic.jpg",
     },
     // {
     //   name: "Sophia Rodriguez",
@@ -142,7 +142,7 @@ export default function AboutPage() {
             </div>
 
             <div className="mb-20">
-              <h2 className="text-3xl font-bold mb-12 text-center">Our Journey</h2>
+              <h2 className="text-3xl font-bold mb-12 text-center">Our Plan</h2>
               <div className="relative">
                 <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-green-900"></div>
                 <div className="space-y-12">
