@@ -115,7 +115,7 @@ export function Features() {
 
           <div className="md:col-span-2 space-y-24">
             {features.map((feature, index) => (
-              <div key={index} ref={(el) => (sectionRefs.current[index] = el)} className="scroll-mt-20">
+              <div key={index} ref={(el) => { sectionRefs.current[index] = el }} className="scroll-mt-20">
                 <div className="flex items-center mb-6">
                   <div className="text-green-500 mr-4">{feature.icon}</div>
                   <h3 className="text-2xl font-bold">{feature.title}</h3>

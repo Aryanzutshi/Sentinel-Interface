@@ -1,7 +1,8 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Terminal } from "@/components/terminal"
+// import { Terminal } from "@/components/terminal"
+import { AdvancedTerminal } from "../components/advanced-terminal"
 import { Hero } from "@/components/hero"
 import { Features } from "@/components/features"
 import { Navigation } from "@/components/navigation"
@@ -32,8 +33,13 @@ export default function Home() {
       <div className={`transition-opacity duration-1000 ${loaded ? "opacity-100" : "opacity-0"}`}>
         <Navigation />
         <Hero />
-        <Terminal />
         <Features />
+        
+        <h2 className="text-3xl font-bold mb-12 text-center">
+          <span className="text-green-400">{">"}</span> Try It Out
+        </h2>
+        
+        <AdvancedTerminal className="w-[50%] h-[1000px] mx-auto" />
         <Footer />
       </div>
     </main>

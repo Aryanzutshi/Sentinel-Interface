@@ -109,8 +109,8 @@ sentinel visualize <choice>`
                       </pre>
                     </div>
 
-                    <h3 className="text-xl font-bold mt-8 mb-4">Try It Out</h3>
-                    <AdvancedTerminal className="mb-8" />
+                    {/* <h3 className="text-xl font-bold mt-8 mb-4">Try It Out</h3>
+                    <AdvancedTerminal className="mb-8" /> */}
 
                     <div className="flex justify-center mt-8">
                       <Button className="bg-green-600 hover:bg-green-700 text-black font-bold px-6 py-2 rounded-md">
