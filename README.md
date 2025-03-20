@@ -1,6 +1,6 @@
-# 🌐 Frontend Repository  
+# 🌐 Sentinel-Interface Repository  
 
-Welcome to the **Frontend Repository** of our project! 🚀  
+Welcome to the **Sentinel-Interface** of our project! 🚀  
 
 ## 📌 About This Repository  
 This repository contains only the **frontend code** for our website. It does **not** include backend logic, APIs, or any other core functionalities of the product.  
