@@ -16,6 +16,23 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Sentinel",
   description: "The ultimate firewall for smart contracts",
+  keywords: ['Smart Contract Security', 'AI-Powered Auditing', 'MEV-Resistant Execution'],
+  authors: [{ name: 'Aryan', url: 'https://github.com/aryanzutshi' }],
+  creator: 'Aryan Zutshi',
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/en-US',
+      'de-DE': '/de-DE',
+    },
+  },
+  openGraph: {
+    title: "Sentinel",
+    description: "The Ultimate Firewall for Smart Contracts",
+    siteName: "Sentinel",
+    locale: "en_US",
+    type: "website",
+  }
 };
 
 import { ReactNode } from "react";
