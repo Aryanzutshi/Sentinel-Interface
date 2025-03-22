@@ -7,7 +7,10 @@ This repository contains only the **frontend code** for our website. It does **n
 
 ## 🔗 Access the Full Product  
 To explore the complete product, visit:  
-👉 **[Sentinel Repository](https://github.com/Aryanzutshi/Sentinel)**  
+👉 **[Sentinel Repository](https://github.com/Aryanzutshi/Sentinel)**
+
+To access the documentation, visit:  
+👉 **[Sentinel Docs](https://app.gitbook.com/o/UO3hYGggJBMeQGIczTah/s/pDNUEw0AjuWkqfI1z0U9/)**
 
 ## ⚙️ Tech Stack  
 - **Frontend Framework:**  React, Next  
