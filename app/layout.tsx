@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Sentinel",
+  icons: {
+    icon: "/favicon.ico"
+  },
   description: "The ultimate firewall for smart contracts",
   keywords: ['Smart Contract Security', 'AI-Powered Auditing', 'MEV-Resistant Execution'],
   authors: [{ name: 'Aryan', url: 'https://github.com/aryanzutshi' }],
