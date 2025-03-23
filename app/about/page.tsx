@@ -19,7 +19,7 @@ export default function AboutPage() {
       name: "Aryan Zutshi",
       role: "Founder & CEO",
       bio: "Smart Contract Developer & Auditor, Founder of EduXX.",
-      image: "/public/ProfilePic.jpeg",
+      image: "/ProfilePic.jpeg",
     },
     // {
     //   name: "Sophia Rodriguez",
@@ -131,7 +131,7 @@ export default function AboutPage() {
                 <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
                 <div className="bg-green-950/20 border border-green-900 rounded-lg p-6 relative">
                   <Image
-                    src="/placeholder.svg?height=400&width=500"
+                    src="/about_pic.png"
                     alt="Sentinel Team"
                     width={500}
                     height={400}
@@ -174,7 +174,7 @@ export default function AboutPage() {
                 {teamMembers.map((member, index) => (
                   <div key={index} className="bg-green-950/20 border border-green-900 rounded-lg p-6 text-center">
                     <div className="mb-4 mx-auto relative w-32 h-32 rounded-full overflow-hidden border-2 border-green-500">
-                      <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
+                      <Image src={member.image} alt={member.name} fill className="object-cover" />
                     </div>
                     <h3 className="text-xl font-bold mb-1">{member.name}</h3>
                     <div className="text-green-400 mb-3">{member.role}</div>

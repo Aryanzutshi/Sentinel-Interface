@@ -44,8 +44,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-green-400 hover:text-green-300">
-                  API (Will update)
+                <Link href="/coming-soon" className="text-green-400 hover:text-green-300">
+                  API
                 </Link>
               </li>
             </ul>
@@ -60,13 +60,13 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-green-400 hover:text-green-300">
-                  Blog (Coming Soon)
+                <Link href="/coming-soon" className="text-green-400 hover:text-green-300">
+                  Blog
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-green-400 hover:text-green-300">
-                  Careers (Coming Soon)
+                <Link href="/coming-soon" className="text-green-400 hover:text-green-300">
+                  Careers
                 </Link>
               </li>
               <li>
@@ -81,17 +81,17 @@ export function Footer() {
             <h3 className="text-lg font-bold mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-green-400 hover:text-green-300">
+                <Link href="/privacy-policy" className="text-green-400 hover:text-green-300">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-green-400 hover:text-green-300">
+                <Link href="/terms-of-service" className="text-green-400 hover:text-green-300">
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-green-400 hover:text-green-300">
+                <Link href="/cookie-policy" className="text-green-400 hover:text-green-300">
                   Cookie Policy
                 </Link>
               </li>
