@@ -18,8 +18,8 @@ export default function AboutPage() {
     {
       name: "Aryan Zutshi",
       role: "Founder & CEO",
-      bio: "Founder of EduXX.",
-      image: "/public/ProfilePic.jpg",
+      bio: "Smart Contract Developer & Auditor, Founder of EduXX.",
+      image: "/public/ProfilePic.jpeg",
     },
     // {
     //   name: "Sophia Rodriguez",
