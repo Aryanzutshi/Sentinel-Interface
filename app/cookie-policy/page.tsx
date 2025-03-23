@@ -5,6 +5,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Cookie, FileText, Info } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import NeonCursor from "@/components/neonCursor"
 
 export default function CookiePolicyPage() {
   const [loaded, setLoaded] = useState(false)
@@ -139,6 +140,7 @@ export default function CookiePolicyPage() {
             <div className="text-center mb-16">
               <div className="inline-flex items-center bg-green-950/50 px-4 py-2 rounded-full mb-6">
                 <Cookie className="h-4 w-4 mr-2" />
+                <NeonCursor />
                 <span className="text-sm">How We Use Cookies</span>
               </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">

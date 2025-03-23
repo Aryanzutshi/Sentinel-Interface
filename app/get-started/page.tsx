@@ -9,6 +9,7 @@ import { AdvancedTerminal } from "@/components/advanced-terminal"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import NeonCursor from "@/components/neonCursor"
 
 export default function GetStartedPage() {
   const [loaded, setLoaded] = useState(false)
@@ -94,6 +95,7 @@ export default function GetStartedPage() {
     <main className="min-h-screen bg-black text-green-500 font-mono">
       <div className={`transition-opacity duration-1000 ${loaded ? "opacity-100" : "opacity-0"}`}>
         <Navigation />
+        <NeonCursor />
 
         <section className="pt-32 pb-16 px-4">
           <div className="max-w-6xl mx-auto">

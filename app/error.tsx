@@ -6,6 +6,7 @@ import { useEffect, useState, useRef } from "react"
 import { AlertTriangle, RefreshCw, Terminal, Home } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useRouter } from "next/navigation"
+import NeonCursor from "@/components/neonCursor"
 
 export default function Error({
   error,
@@ -134,6 +135,8 @@ export default function Error({
           transform: `skew(${glitchLevel / 10}deg, ${glitchLevel / 20}deg)`,
         }}
       />
+
+      <NeonCursor />
 
       {/* Random noise lines */}
       <div className="absolute inset-0 overflow-hidden">

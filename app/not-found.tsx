@@ -6,6 +6,7 @@ import { useEffect, useState, useRef } from "react"
 import { Search, Shield, Home, ArrowLeft } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useRouter } from "next/navigation"
+import NeonCursor from "@/components/neonCursor"
 
 export default function NotFound() {
   const router = useRouter()
@@ -97,6 +98,8 @@ export default function NotFound() {
           ))}
         </div>
       )}
+
+      <NeonCursor />
 
       <div className={`relative z-20 max-w-xl w-full mx-auto px-4 text-center ${glitchActive ? "animate-glitch" : ""}`}>
         <div className="relative mb-8">

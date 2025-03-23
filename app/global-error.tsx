@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { AlertTriangle, Shield, RefreshCw } from "lucide-react"
+import NeonCursor from "@/components/neonCursor"
 
 export default function GlobalError({
   error,
@@ -40,6 +41,7 @@ export default function GlobalError({
   return (
     <html>
       <body className="bg-black text-green-500 font-mono">
+        <NeonCursor />
         <div className="fixed inset-0 flex flex-col items-center justify-center">
           {/* Background effects */}
           <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>

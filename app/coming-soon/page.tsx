@@ -8,6 +8,7 @@ import { Footer } from "@/components/footer"
 import { Shield, AlertTriangle, Clock, Bell, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import NeonCursor from "@/components/neonCursor"
 
 export default function ComingSoonPage() {
   const [loaded, setLoaded] = useState(false)
@@ -136,6 +137,7 @@ export default function ComingSoonPage() {
     <main className="min-h-screen bg-black text-green-500 font-mono">
       <div className={`transition-opacity duration-1000 ${loaded ? "opacity-100" : "opacity-0"}`}>
         <Navigation />
+        <NeonCursor />
 
         <section className="relative pt-32 pb-16 min-h-screen flex flex-col items-center justify-center">
           <canvas ref={canvasRef} className="absolute inset-0 z-0 opacity-30" />

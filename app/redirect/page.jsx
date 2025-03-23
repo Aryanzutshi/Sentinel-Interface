@@ -2,6 +2,7 @@
 
 import { LoginCallBack } from '@opencampus/ocid-connect-js';
 import { useRouter } from 'next/navigation';
+import NeonCursor from "@/components/neonCursor"
 
 export default function RedirectPage() {
   const router = useRouter();
@@ -24,11 +25,12 @@ export default function RedirectPage() {
   }
 
   return (
-    <LoginCallBack 
-      errorCallback={loginError} 
+    <><LoginCallBack
+      errorCallback={loginError}
       successCallback={loginSuccess}
       customErrorComponent={<CustomErrorComponent />}
-      customLoadingComponent={<CustomLoadingComponent />} 
-    />
+      customLoadingComponent={<CustomLoadingComponent />} />
+      <NeonCursor />
+      </>
   );
 }

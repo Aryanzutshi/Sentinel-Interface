@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from "react"
 import { Shield } from "lucide-react"
+import NeonCursor from "@/components/neonCursor"
 
 export default function Loading() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -151,6 +152,8 @@ export default function Loading() {
             </>
           )}
         </div>
+
+        <NeonCursor />
 
         <h1 className={`text-4xl font-bold mt-8 text-green-500 ${glitchActive ? "animate-shake" : ""}`}>SENTINEL</h1>
 

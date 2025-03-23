@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Shield, FileText, Scale, AlertTriangle } from "lucide-react"
+import NeonCursor from "@/components/neonCursor"
 
 export default function TermsOfServicePage() {
   const [loaded, setLoaded] = useState(false)
@@ -142,6 +143,7 @@ export default function TermsOfServicePage() {
     <main className="min-h-screen bg-black text-green-500 font-mono">
       <div className={`transition-opacity duration-1000 ${loaded ? "opacity-100" : "opacity-0"}`}>
         <Navigation />
+        <NeonCursor />
 
         <section className="pt-32 pb-16 px-4">
           <div className="max-w-6xl mx-auto">

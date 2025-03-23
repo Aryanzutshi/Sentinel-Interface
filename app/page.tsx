@@ -8,6 +8,7 @@ import { Features } from "@/components/features"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { useOCAuth } from '@opencampus/ocid-connect-js';
+import NeonCursor from "@/components/neonCursor"
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false)
@@ -29,6 +30,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-black text-green-500 font-mono">
       <div className={`transition-opacity duration-1000 ${loaded ? "opacity-100" : "opacity-0"}`}>
+        <NeonCursor />
         <Navigation />
         <Hero />
         <Features />
