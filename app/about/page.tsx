@@ -90,7 +90,7 @@ export default function AboutPage() {
                 <span className="text-green-400">{">"}</span> About Sentinel
               </h1>
               <p className="text-xl max-w-3xl mx-auto text-green-400">
-                We're on a mission to make Web3 safer for everyone by protecting smart contracts from exploits and
+                We&apos;re on a mission to make Web3 safer for everyone by protecting smart contracts from exploits and
                 attacks.
               </p>
             </div>
@@ -105,7 +105,7 @@ export default function AboutPage() {
                 </p>
                 <p className="mb-6 text-green-400">
                   Founded by a team of blockchain developer, Sentinel was born out of the need
-                  for better security tools in the rapidly evolving blockchain landscape. We've seen firsthand the
+                  for better security tools in the rapidly evolving blockchain landscape. We&apos;ve seen firsthand the
                   devastating impact of smart contract exploits and are committed to preventing them.
                 </p>
                 {/* <div className="grid grid-cols-2 gap-4 mt-8">
@@ -187,7 +187,7 @@ export default function AboutPage() {
             <div className="text-center">
               <h2 className="text-3xl font-bold mb-6">Join Our Mission</h2>
               <p className="text-xl max-w-3xl mx-auto mb-8 text-green-400">
-                We're always looking for talented individuals who are passionate about blockchain security.
+                We&apos;re always looking for talented individuals who are passionate about blockchain security.
               </p>
               <Button className="bg-green-600 hover:bg-green-700 text-black font-bold px-8 py-3 rounded-md text-lg">
                 View Open Positions

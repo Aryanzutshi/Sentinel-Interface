@@ -1,4 +1,5 @@
 import { Shield, Github, Twitter, Linkedin } from "lucide-react"
+import Link from "next/link"
 
 export function Footer() {
   return (
@@ -8,19 +9,19 @@ export function Footer() {
           <div className="md:col-span-1">
             <div className="flex items-center mb-4">
               <Shield className="h-6 w-6 text-green-500 mr-2" />
-              <span className="text-xl font-bold"><a href="/">Sentinel</a></span>
+              <span className="text-xl font-bold"><Link href={"/"}>Sentinel</Link></span>
             </div>
             <p className="text-green-400 mb-4">The ultimate firewall for smart contracts.</p>
             <div className="flex space-x-4">
-              <a href="https://github.com/aryanzutshi/Sentinel" className="text-green-500 hover:text-green-400">
+              <Link href="https://github.com/Linkryanzutshi/Sentinel" className="text-green-500 hover:text-green-400">
                 <Github className="h-5 w-5" />
-              </a>
-              <a href="https://x.com.aryanzutshi12" className="text-green-500 hover:text-green-400">
+              </Link>
+              <Link href="https://x.com.aryanzutshi12" className="text-green-500 hover:text-green-400">
                 <Twitter className="h-5 w-5" />
-              </a>
-              <a href="https://linkedin.com/in/aryanzutshi" className="text-green-500 hover:text-green-400">
+              </Link>
+              <Link href="https://linkedin.com/in/aryanzutshi" className="text-green-500 hover:text-green-400">
                 <Linkedin className="h-5 w-5" />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -28,24 +29,24 @@ export function Footer() {
             <h3 className="text-lg font-bold mb-4">Product</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/features" className="text-green-400 hover:text-green-300">
+                <Link href="/features" className="text-green-400 hover:text-green-300">
                   Features
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/get-started" className="text-green-400 hover:text-green-300">
+                <Link href="/get-started" className="text-green-400 hover:text-green-300">
                   Pricing
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://app.gitbook.com/o/UO3hYGggJBMeQGIczTah/s/pDNUEw0AjuWkqfI1z0U9/" className="text-green-400 hover:text-green-300">
+                <Link href="https://app.gitbook.com/o/UO3hYGggJBMeQGIczTah/s/pDNUEw0AjuWkqfI1z0U9/" className="text-green-400 hover:text-green-300">
                   Documentation
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-green-400 hover:text-green-300">
+                <Link href="#" className="text-green-400 hover:text-green-300">
                   API (Will update)
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -54,24 +55,24 @@ export function Footer() {
             <h3 className="text-lg font-bold mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/about" className="text-green-400 hover:text-green-300">
+                <Link href="/about" className="text-green-400 hover:text-green-300">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-green-400 hover:text-green-300">
+                <Link href="#" className="text-green-400 hover:text-green-300">
                   Blog (Coming Soon)
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-green-400 hover:text-green-300">
+                <Link href="#" className="text-green-400 hover:text-green-300">
                   Careers (Coming Soon)
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="text-green-400 hover:text-green-300">
+                <Link href="/contact" className="text-green-400 hover:text-green-300">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -80,19 +81,19 @@ export function Footer() {
             <h3 className="text-lg font-bold mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-green-400 hover:text-green-300">
+                <Link href="#" className="text-green-400 hover:text-green-300">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-green-400 hover:text-green-300">
+                <Link href="#" className="text-green-400 hover:text-green-300">
                   Terms of Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-green-400 hover:text-green-300">
+                <Link href="#" className="text-green-400 hover:text-green-300">
                   Cookie Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

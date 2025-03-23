@@ -360,7 +360,7 @@ export default function GetStartedPage() {
                           <TabsContent value="import" className="mt-4">
                             <div className="bg-green-950/30 border border-green-800 rounded-lg p-4 mb-4">
                               <p className="text-sm">
-                                We'll scan your connected wallet for deployed contracts. Select the ones you want to
+                                We&apos;ll scan your connected wallet for deployed contracts. Select the ones you want to
                                 protect.
                               </p>
                             </div>
@@ -581,7 +581,7 @@ export default function GetStartedPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                       <div>
                         <p className="mb-6 text-green-400">
-                          You're ready to deploy Sentinel protection to your smart contracts. Review your settings and
+                          You&apos;re ready to deploy Sentinel protection to your smart contracts. Review your settings and
                           activate your security shield.
                         </p>
 
@@ -636,7 +636,7 @@ export default function GetStartedPage() {
                         </div>
 
                         <div className="bg-green-950/20 p-6 rounded-lg">
-                          <h3 className="font-bold mb-4">What's Next?</h3>
+                          <h3 className="font-bold mb-4">What&apos;s Next?</h3>
                           <ul className="space-y-3">
                             <li className="flex items-start">
                               <ArrowRight className="h-5 w-5 mr-2 mt-0.5 text-green-400" />
@@ -700,7 +700,7 @@ export default function GetStartedPage() {
             <div className="text-center">
               <h2 className="text-3xl font-bold mb-6">Ready to Secure Your Smart Contracts?</h2>
               <p className="text-xl max-w-3xl mx-auto mb-8 text-green-400">
-                Start protecting your smart contracts today with Sentinel's advanced security features.
+                Start protecting your smart contracts today with Sentinel&apos;s advanced security features.
               </p>
               <Button className="bg-green-600 hover:bg-green-700 text-black font-bold px-8 py-3 rounded-md text-lg">
                 Get Started Now

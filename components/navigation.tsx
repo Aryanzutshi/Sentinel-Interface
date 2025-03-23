@@ -3,10 +3,8 @@
 import { useState, useEffect } from "react"
 import { Shield, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Features } from "./features"
 import Link from "next/link"
 import { useOCAuth } from '@opencampus/ocid-connect-js';
-import LoginButton from "../components/LoginButton";
 
 export function Navigation() {
   const { ocAuth } = useOCAuth();
@@ -40,7 +38,7 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center">
           <Shield className="h-8 w-8 text-green-500 mr-2" />
-          <span className="text-xl font-bold"><a href="/">Sentinel</a></span>
+          <span className="text-xl font-bold"><Link href="/">Sentinel</Link></span>
         </div>
 
         <nav className="hidden md:flex items-center space-x-8">
@@ -83,18 +81,18 @@ export function Navigation() {
         </div>
 
         <div className="flex flex-col items-center justify-center h-full space-y-8">
-          <a href="/features" className="text-green-400 text-2xl" onClick={() => setMobileMenuOpen(false)}>
+          <Link href="/features" className="text-green-400 text-2xl" onClick={() => setMobileMenuOpen(false)}>
             Features
-          </a>
-          <a href="/documentation" className="text-green-400 text-2xl" onClick={() => setMobileMenuOpen(false)}>
+          </Link>
+          <Link href="/documentation" className="text-green-400 text-2xl" onClick={() => setMobileMenuOpen(false)}>
             Documentation
-          </a>
-          <a href="/about" className="text-green-400 text-2xl" onClick={() => setMobileMenuOpen(false)}>
+          </Link>
+          <Link href="/about" className="text-green-400 text-2xl" onClick={() => setMobileMenuOpen(false)}>
             About
-          </a>
-          <a href="/contact" className="text-green-400 text-2xl" onClick={() => setMobileMenuOpen(false)}>
+          </Link>
+          <Link href="/contact" className="text-green-400 text-2xl" onClick={() => setMobileMenuOpen(false)}>
             Contact
-          </a>
+          </Link>
 
           <div className="pt-8 flex flex-col space-y-4">
             <Button onClick={handleLogin} variant="outline" className="border-green-500 text-green-500 hover:bg-green-950">

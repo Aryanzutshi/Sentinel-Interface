@@ -7,15 +7,17 @@ import { Hero } from "@/components/hero"
 import { Features } from "@/components/features"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import LoginButton from '../components/LoginButton';
 import { useOCAuth } from '@opencampus/ocid-connect-js';
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false)
   const { authState, ocAuth } = useOCAuth();
 
-   // Ensure authState exists before accessing properties
-
+  useEffect(() => {
+    setLoaded(true)
+  }, [])
+  
+  // Ensure authState exists before accessing properties
    if (authState?.isLoading) {
     return <div>Loading...</div>;
   }
@@ -23,10 +25,6 @@ export default function Home() {
   if (authState?.error) {
     return <div>Error: {authState.error.message}</div>;
   }
-
-  useEffect(() => {
-    setLoaded(true)
-  }, [])
 
   return (
     <main className="min-h-screen bg-black text-green-500 font-mono">

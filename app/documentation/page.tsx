@@ -6,7 +6,6 @@ import { Footer } from "@/components/footer"
 import { FileText, TerminalIcon, Copy, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { AdvancedTerminal } from "@/components/advanced-terminal"
 
 export default function DocumentationPage() {
   const [loaded, setLoaded] = useState(false)
@@ -299,7 +298,7 @@ Coming Soon
                     <TerminalIcon className="h-16 w-16 mb-6 text-green-500" />
                     <h2 className="text-2xl font-bold mb-4">Documentation Section Under Construction</h2>
                     <p className="text-center mb-6 max-w-md">
-                      We're currently building this section of our documentation. Check back soon for updates.
+                      We&apos;re currently building this section of our documentation. Check back soon for updates.
                     </p>
                     <Button onClick={()=>{window.location.href="/documentation"}} className="bg-green-600 hover:bg-green-700 text-black font-bold">
                       Return to Documentation

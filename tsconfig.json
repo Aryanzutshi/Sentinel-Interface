@@ -4,6 +4,8 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
+    "types": ["node", "estree"],
+    "typeRoots": ["node_modules/@types"],
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -23,5 +25,13 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/OCConnectWrapper.jsx", "components/LoginButton.jsx"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+  ],
+  "rules": {
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"]
+  }
 }

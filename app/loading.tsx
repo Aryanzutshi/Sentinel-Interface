@@ -11,7 +11,7 @@ export default function Loading() {
 
   // Matrix rain effect
   useEffect(() => {
-    const canvas: any = canvasRef.current
+    const canvas: any= canvasRef.current
     if (!canvas) return
 
     const ctx: any = canvas.getContext("2d")

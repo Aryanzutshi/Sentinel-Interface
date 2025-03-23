@@ -44,7 +44,7 @@ export default function ContactPage() {
                 <span className="text-green-400">{">"}</span> Contact Sentinel
               </h1>
               <p className="text-xl max-w-3xl mx-auto text-green-400">
-                Have questions about our security solutions? We're here to help.
+                Have questions about our security solutions? We&apos;re here to help.
               </p>
             </div>
 
@@ -194,7 +194,7 @@ export default function ContactPage() {
                     </div>
                     <h2 className="text-2xl font-bold mb-4">Message Sent!</h2>
                     <p className="text-center text-green-400 mb-6">
-                      Thank you for contacting Sentinel. We'll get back to you as soon as possible.
+                      Thank you for contacting Sentinel. We&apos;ll get back to you as soon as possible.
                     </p>
                     <Button
                       onClick={() => setFormSubmitted(false)}
