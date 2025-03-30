@@ -9,6 +9,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { useOCAuth } from '@opencampus/ocid-connect-js';
 import NeonCursor from "@/components/neonCursor"
+import { Testimonials } from "@/components/testimonials"
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false)
@@ -34,6 +35,7 @@ export default function Home() {
         <Navigation />
         <Hero />
         <Features />
+        <Testimonials />
         <h2 className="text-3xl font-bold mb-12 text-center">
           <span className="text-green-400">{">"}</span> Try It Out
         </h2>

@@ -32,7 +32,7 @@ export function Hero() {
   }, [subtitleVisible])
 
   return (
-    <section className="relative overflow-hidden py-20 px-4">
+    <section className="relative overflow-hidden py-20 px-4 h-screen w-screen flex items-center justify-center">
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
 
       <div className="max-w-5xl mx-auto text-center relative z-10">
@@ -66,7 +66,7 @@ export function Hero() {
           </Button>
         </div>
 
-        <div
+        {/* <div
           className={`mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 transition-opacity duration-1000 delay-300 ${buttonsVisible ? "opacity-100" : "opacity-0"}`}
         >
           <div className="bg-green-950/30 p-6 rounded-lg border border-green-800">
@@ -86,7 +86,7 @@ export function Hero() {
             <h3 className="text-xl font-bold mb-2">MEV Protection</h3>
             <p className="text-green-400">Prevents front-running and sandwich attacks</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )

@@ -54,6 +54,9 @@ export function Navigation() {
           <Link href="/contact" className="text-green-400 hover:text-green-300 transition-colors">
             Contact
           </Link>
+          <Link href="/dashboard" className="text-green-400 hover:text-green-300 transition-colors">
+            Dashboard
+          </Link>
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
@@ -92,6 +95,9 @@ export function Navigation() {
           </Link>
           <Link href="/contact" className="text-green-400 text-2xl" onClick={() => setMobileMenuOpen(false)}>
             Contact
+          </Link>
+          <Link href="/dashboard" className="text-green-400 text-2xl" onClick={() => setMobileMenuOpen(false)}>
+            Dashboard
           </Link>
 
           <div className="pt-8 flex flex-col space-y-4">
