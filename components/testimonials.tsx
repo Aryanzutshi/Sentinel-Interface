@@ -55,7 +55,7 @@ const testimonials = [
   {
     id: "Web3 Gaming startup",
     company: "Boulevard",
-    logo: "/placeholder.svg?height=40&width=120",
+    logo: "/boulevard.jpeg",
     personName: "Ayush Raj",
     personRole: "Lead Unity Game developer, Integration developer",
     quote:
@@ -202,6 +202,7 @@ export function Testimonials() {
                         alt={activeTestimonial.personName}
                         fill
                         className="object-cover"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
                       {/* Overlay with matrix effect */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
