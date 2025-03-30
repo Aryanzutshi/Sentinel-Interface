@@ -46,7 +46,7 @@ export default function RootLayout({
   children: ReactNode;
 }) {
   const opts = {
-    redirectUri: 'http://localhost:3000/', // Adjust this URL
+    redirectUri: 'https://sentinel-interface-lyart.vercel.app/', 
     referralCode: 'PARTNER6', // Assign partner code
   };
 
