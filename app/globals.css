@@ -12,6 +12,7 @@
 body {
   color: rgb(var(--primary));
   background: rgb(var(--background));
+  font-family: 'Georgia', 'sans-serif';
 }
 
 @layer base {
@@ -68,6 +69,13 @@ body {
 
   .animate-shake {
     animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  }
+
+  @font-face {
+    font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';
+    src: url('/_next/static/media/gyByhwUxId8gMEwcGFWNOITd-s.p.da1ebef7.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
   }
 
   @keyframes shake {

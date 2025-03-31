@@ -10,6 +10,10 @@ import { Footer } from "@/components/footer"
 import { useOCAuth } from '@opencampus/ocid-connect-js';
 import NeonCursor from "@/components/neonCursor"
 import { Testimonials } from "@/components/testimonials"
+import { ValueProposition } from "@/components/value-proposition"
+import { CompetitorComparison } from "@/components/competitor-comparison"
+import { VideoWalkthroughs } from "@/components/video-walkthrough"
+import { ComplianceCarousel } from "@/components/compliance-carousel"
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false)
@@ -34,11 +38,15 @@ export default function Home() {
         <NeonCursor />
         <Navigation />
         <Hero />
+        <ValueProposition />
         <Features />
+        <VideoWalkthroughs />
+        <CompetitorComparison />
         <Testimonials />
+        <ComplianceCarousel />
         <h2 className="text-3xl font-bold mb-12 text-center">
           <span className="text-green-400">{">"}</span> Try It Out
-        </h2>
+         </h2>
         <AdvancedTerminal className="w-[50%] h-[1000px] mx-auto" />
         <Footer />
       </div>
