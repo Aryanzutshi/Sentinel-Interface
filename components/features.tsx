@@ -89,7 +89,7 @@ export function Features() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="md:col-span-1 space-y-4 sticky top-20 self-start">
+          <div className="md:col-span-1 space-y-10 sticky top-32 self-start">
             {features.map((feature, index) => (
               <button
                 key={index}

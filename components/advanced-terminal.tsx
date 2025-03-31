@@ -234,7 +234,7 @@ export function AdvancedTerminal({ className = "", height = "300px" }: AdvancedT
 
   return (
     <div
-      className={`relative border border-green-800 rounded-lg overflow-hidden w-[57%] h-[50vh] ${className}`}
+      className={`relative border border-green-800 rounded-lg overflow-hidden w-[57%] h-[50vh] mb-9 ${className}`}
       style={{ height: isFullscreen ? "90vh" : height }}
     >
       <div className="bg-green-950/30 p-2 flex items-center justify-between">

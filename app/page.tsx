@@ -45,7 +45,7 @@ export default function Home() {
         <Testimonials />
         <ComplianceCarousel />
         <h2 className="text-3xl font-bold mb-12 text-center">
-          <span className="text-green-400">{">"}</span> Try It Out
+          <span className="text-green-400">{">"}</span> Demo
          </h2>
         <AdvancedTerminal className="w-[50%] h-[1000px] mx-auto" />
         <Footer />
